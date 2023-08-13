@@ -353,12 +353,14 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                                Strings.currentOrgName,
+                              maxLines: 1,
+                              // overflow: TextOverflow.clip,
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
                                       : AppColors().textLight,
-                                  letterSpacing: 1,
+                                  letterSpacing: 2,
                                   height: 1.5,
                                   fontSize: 14,
                                   fontFamily: 'sfmono'),
@@ -382,7 +384,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              Strings.prevOrg,
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor
@@ -411,7 +413,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Techno Kryon',
+                              'Crafty Fashions',
                               style: TextStyle(
                                   color: data == 2
                                       ? AppColors().neonColor
@@ -442,7 +444,7 @@ class _ExperienceWebState extends State<ExperienceWeb> {
                                   fontSize: 20),
                               children: <TextSpan>[
                                 TextSpan(
-                                  text: ' @${experienceList[data].compName}',
+                                  text: ' \n@${experienceList[data].compName}',
                                   style: GoogleFonts.roboto(
                                       color: AppColors().neonColor,
                                       fontSize: 20),

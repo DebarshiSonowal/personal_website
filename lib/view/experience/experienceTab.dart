@@ -353,7 +353,9 @@ class _ExperienceTabState extends State<ExperienceTab> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                                Strings.currentOrgName,
+                              maxLines: 1,
+                              overflow: TextOverflow.clip,
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
@@ -382,7 +384,7 @@ class _ExperienceTabState extends State<ExperienceTab> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              Strings.prevOrg,
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor

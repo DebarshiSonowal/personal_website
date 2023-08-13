@@ -372,7 +372,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Netaccess',
+                              Strings.currentOrgName,
                               style: TextStyle(
                                   color: data == 0
                                       ? AppColors().neonColor
@@ -400,7 +400,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                                             : Colors.white,
                                         width: 2))),
                             child: Text(
-                              'Rax-Tech',
+                              Strings.prevOrg,
                               style: TextStyle(
                                   color: data == 1
                                       ? AppColors().neonColor

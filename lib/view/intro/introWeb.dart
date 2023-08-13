@@ -1,6 +1,8 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../resource/appClass.dart';
 import '../../resource/colors.dart';
@@ -61,7 +63,7 @@ class _IntroWebState extends State<IntroWeb> {
                       color: AppColors().textLight,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 3,
-                      fontSize: 55,
+                      fontSize: 20,
                     ),
                   ),
                 ),
@@ -82,6 +84,9 @@ class _IntroWebState extends State<IntroWeb> {
                           children: <TextSpan>[
                         TextSpan(
                           text: Strings.currentOrgName,
+                          recognizer: TapGestureRecognizer()..onTap = () {
+                            launchUrl(Uri.parse(Strings.orgLink));
+                          },
                           style: GoogleFonts.roboto(
                             color: AppColors().neonColor,
                             letterSpacing: 1,

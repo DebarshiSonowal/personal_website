@@ -166,6 +166,30 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
                                     )),
                               ],
                             ),
+                            Row(
+                              children: [
+                                Icon(Icons.arrow_right),
+                                Text(Strings.tech5,
+                                    style: GoogleFonts.robotoFlex(
+                                      color: AppColors().textLight,
+                                      letterSpacing: 1,
+                                      height: 1.5,
+                                      fontSize: 17,
+                                    )),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Icon(Icons.arrow_right),
+                                Text(Strings.tech6,
+                                    style: GoogleFonts.robotoFlex(
+                                      color: AppColors().textLight,
+                                      letterSpacing: 1,
+                                      height: 1.5,
+                                      fontSize: 17,
+                                    )),
+                              ],
+                            ),
                           ]),
                     ),
                   ],
@@ -218,7 +242,7 @@ class _AboutWebState extends ConsumerState<AboutWeb> {
                                                 ? BlendMode.lighten
                                                 : BlendMode.color),
                                         image: AssetImage(
-                                            'assets/svg/profilePic.jpg')),
+                                            'assets/svg/profilePic.png')),
                                     color: Colors.transparent),
                               ),
                             ),
