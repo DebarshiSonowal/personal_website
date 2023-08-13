@@ -1,4 +1,0 @@
-[submodule "personal_website"]
-	path = personal_website
-	url = https://github.com/DebarshiSonowal/personal_website.git
-	branch = master
