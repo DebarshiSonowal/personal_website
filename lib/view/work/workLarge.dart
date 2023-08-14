@@ -177,19 +177,23 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                       padding: const EdgeInsets.only(top: 10.0, bottom: 8.0),
                       child: Row(
                         children: [
-                          Text(
-                            AppClass()
-                                .projectList[index]
-                                .projectTitle
-                                .toString(),
-                            textAlign: TextAlign.left,
-                            style: GoogleFonts.robotoSlab(
-                              color: isHovered
-                                  ? AppColors().neonColor
-                                  : Colors.white,
-                              letterSpacing: 1,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 14,
+                          SizedBox(
+                            width:320,
+                            child: Text(
+                              AppClass()
+                                  .projectList[index]
+                                  .projectTitle
+                                  .toString(),
+                              textAlign: TextAlign.left,
+                              maxLines: 2,
+                              style: GoogleFonts.robotoSlab(
+                                color: isHovered
+                                    ? AppColors().neonColor
+                                    : Colors.white,
+                                letterSpacing: 1,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 12,
+                              ),
                             ),
                           ),
                         ],

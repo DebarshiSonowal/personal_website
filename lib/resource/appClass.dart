@@ -64,12 +64,12 @@ class AppClass {
       tech3: "API",
     ),
     WorkModel(
-      projectTitle: "Apna Team",
+      projectTitle: "Transformer-Based Hate Speech Detection in Assamese",
       projectContent:
-          "Unleash your sports expertise with our fantasy app, where you draft, strategize, and compete for ultimate glory.",
-      tech1: "Flutter",
-      tech2: "Android",
-      tech3: "Fantasy Sport API",
+          "Study tackles Assamese hate speech detection using fine-tuned mBERT and Bangla-BERT models, aiding social media content moderation.",
+      tech1: "NLP",
+      tech2: "Machine Learning",
+      tech3: "Flutter",
     ),
   ];
 
