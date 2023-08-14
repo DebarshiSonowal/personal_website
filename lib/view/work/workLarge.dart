@@ -134,7 +134,9 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
         return Container(
           margin: EdgeInsets.all(isHovered ? 8.0 : 0.0),
           child: Tooltip(
-            message: AppClass().projectList[index].projectTitle.toString() + "\n\n" + AppClass().projectList[index].projectContent.toString(),
+            message: AppClass().projectList[index].projectTitle.toString() +
+                "\n\n" +
+                AppClass().projectList[index].projectContent.toString(),
             padding: EdgeInsets.all(20),
             margin: EdgeInsets.all(AppClass().getMqWidth(context) * 0.1),
             waitDuration: Duration(seconds: 3),
@@ -166,7 +168,8 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                           'assets/svg/externalLink.svg',
                           width: 22,
                           height: 22,
-                          color: isHovered ? AppColors().neonColor : Colors.white,
+                          color:
+                              isHovered ? AppColors().neonColor : Colors.white,
                         ),
                       ],
                     ),
@@ -175,15 +178,19 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                       child: Row(
                         children: [
                           Text(
-                            AppClass().projectList[index].projectTitle.toString(),
+                            AppClass()
+                                .projectList[index]
+                                .projectTitle
+                                .toString(),
                             textAlign: TextAlign.left,
                             style: GoogleFonts.robotoSlab(
-                                color: isHovered
-                                    ? AppColors().neonColor
-                                    : Colors.white,
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20),
+                              color: isHovered
+                                  ? AppColors().neonColor
+                                  : Colors.white,
+                              letterSpacing: 1,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 14,
+                            ),
                           ),
                         ],
                       ),
@@ -192,12 +199,15 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                         child: Text(
-                          AppClass().projectList[index].projectContent.toString(),
+                          AppClass()
+                              .projectList[index]
+                              .projectContent
+                              .toString(),
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 14,
+                            fontSize: 12,
                           ),
                         ),
                       ),

@@ -306,7 +306,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                           child: Text('Resume',
                               style: TextStyle(
                                   color: AppColors().neonColor,
-                                  fontSize: 13,
+                                  fontSize: 10,
                                   letterSpacing: 1,
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'sfmono')),

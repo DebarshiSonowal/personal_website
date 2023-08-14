@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/resource/appClass.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../controller/generalController.dart';
 import '../../resource/colors.dart';
@@ -111,7 +112,7 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
           Column(
             children: [
               Text(
-                '''Built & Developed by Jeevanandham''',
+                '''Built & Developed by Debarshi Sonowal''',
                 style: TextStyle(
                     color: AppColors().textColor,
                     fontSize: 12,
@@ -120,7 +121,7 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  '''ref - Britney C''',
+                  '''ref - Jeevanandham''',
                   style: TextStyle(
                       color: AppColors().neonColor,
                       fontSize: 12,
@@ -230,19 +231,20 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                                       onTap: () async {
                                         if (_formKey.currentState!.validate()) {
                                           ref.read(progressProvider.notifier).state = true;
-                                          AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
-                                            if(value) {
-                                              Navigator.pop(context);
-                                              AppClass().showSnackBar('Message sent successfully', context: context);
-                                            } else {
-                                              Navigator.pop(context);
-                                              AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
-                                            }
-                                            ref.read(progressProvider.notifier).state = false;
-                                          }).onError((error, stackTrace) {
-                                            Navigator.pop(context);
-                                            AppClass().showSnackBar('Error Occurred', context: context);
-                                          });
+                                          launchEmailSubmission(nameController.text, contactInfoController.text, msgController.text);
+                                          // AppClass().sendEmail(nameController.text, contactInfoController.text, msgController.text).then((value) {
+                                          //   if(value) {
+                                          //     Navigator.pop(context);
+                                          //     AppClass().showSnackBar('Message sent successfully', context: context);
+                                          //   } else {
+                                          //     Navigator.pop(context);
+                                          //     AppClass().showSnackBar('Failed to send message, please try again later.', context: context);
+                                          //   }
+                                          //   ref.read(progressProvider.notifier).state = false;
+                                          // }).onError((error, stackTrace) {
+                                          //   Navigator.pop(context);
+                                          //   AppClass().showSnackBar('Error Occurred', context: context);
+                                          // });
                                         }
                                       },
                                       child: Container(
@@ -283,8 +285,24 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                   ],
                 );
               }
+
           ),
         )
     );
+  }
+  void launchEmailSubmission(String name,contact_info,message) async {
+    final Uri params = Uri(
+        scheme: 'mailto',
+        path: 'debarkhisonowal@gmail.com',
+        queryParameters: {
+          'subject': 'Mail From Portfolio Website $name',
+          'body': '${message}\n Contact Information:\n ${contact_info}'
+        }
+    );
+    if (await canLaunchUrl(params)) {
+      await launchUrl(params);
+    } else {
+      print('Could not launch $params');
+    }
   }
 }

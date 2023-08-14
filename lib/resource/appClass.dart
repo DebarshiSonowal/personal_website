@@ -4,7 +4,6 @@ import 'package:portfolio/model/models.dart';
 import 'package:portfolio/resource/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
 enum ScreenType { mobile, tab, web }
 
 class AppClass {
@@ -14,7 +13,7 @@ class AppClass {
 
   /* URL */
   static final resumeDownloadURL =
-      '''https://jeeva-portfolio.s3.amazonaws.com/JEEVANANDHAM's+Resume.pdf''';
+      '''https://drive.google.com/file/d/1dHf_eMAnBUEVashGUo4_sf_tNILBqpqd/view?usp=sharing''';
 
   static final gitSafeC19 = '''https://github.com/jeeva-HBK/SafeC19''';
 
@@ -28,44 +27,50 @@ class AppClass {
 
   List<WorkModel> projectList = [
     WorkModel(
-        projectTitle: "SafeC19",
+        projectTitle: "Guwahati Plus",
         projectContent:
-            "A fully automatic temperature and face mask detection solution for a completely contactless hand sanitizer. A solution so unique that it has integrated door access control if monitoring parameters are normal. An image is still captured and uploaded in cloud server on its own, as reference for auditing.",
-        tech1: "Android",
-        tech2: "Google-ML",
-        tech3: "Java"),
+            "The G Plus app provides a comprehensive platform for Latest News, Videos, and Special Features focused on Guwahati, including exclusive content and community engagement.",
+        tech1: "Flutter",
+        tech2: "Firebase",
+        tech3: "Eazebuzz"),
     WorkModel(
-        projectTitle: "Hermarts",
-        projectContent:
-            "Hermarts is an Ecommerce website/mobile application specially designed to encourage and takeout the hidden talent of women candidates, who never gets opportunities to explore their talents. It is developed with user-centric features to help the users with integrated InApp payment mode with high level security.",
-        tech1: "Android",
-        tech2: "RazorPay"),
+      projectTitle: "Tratri",
+      projectContent:
+          "Tratri celebrates everyday heroes and diverse histories, offering a comfortable reading experience through the Tratri App.",
+      tech1: "Flutter",
+      tech2: "RazorPay",
+      tech3: "Firebase",
+    ),
     WorkModel(
-        projectTitle: "WT-IoT",
+        projectTitle: "NIRI9",
         projectContent:
-            '''It’s a water treatment process controller which can control all the sensors, calibration process, and staff management.''',
-        tech1: "Android",
-        tech2: "TCP",
+            "Your ultimate app for regional language movies, web series, and short films, bridging the gap between creators and Indian audiences.",
+        tech1: "Flutter",
+        tech2: "Android & IOS",
         tech3: "API"),
     WorkModel(
-        projectTitle: "AutoStabilizer",
+        projectTitle: "POS",
         projectContent:
-            '''It is used to connect to a stabilizer and read the inlet and outlet voltage and several other parameters of the Stabilizer. This application will also set up the stabilizer hardware to connect the stabilizer to the Wi-Fi network. And with some features like PIR Sensor, Control Stabilizer with schedule, Standby Mode, Control Stabilizer with MobileData via AWS, and With WiFi via TCP Connection.''',
-        tech1: "Android",
-        tech2: "MQTT"),
-    WorkModel(
-        projectTitle: "PAT",
-        projectContent:
-            '''This application is to store and record the data of tested production product information for future reference. This application can reduce the time and ensure the performance and quality of the QA/QC people. This application let the super admin to track the workers and their performance. Through this application, we can calculate the time spent on every test that was taken to complete by the worker.''',
+            '''An affordable, all-in-one POS solution catering to the needs of small restaurants. Through this application, we can run analytics and provide the data''',
         tech1: "Flutter",
-        tech2: "NodeJs",
-        tech3: "Flutter-Windows"),
+        tech2: "Android",
+        tech3: "Java"),
     WorkModel(
-        projectTitle: "AVM",
-        projectContent:
-            '''AVM - Automatic Vending Machine is one of Pradeep's stainless steel product. The project is aimed at automating the beverage vending process. It can be done through hardware that controls the main engines and a mobile app (which acts like a PCB display for the unit) that is used to personalize and make beverage. It can also perform several process like Brewing, Boiling,cleansing drum etc . The Engines (hardware) and Mobiel Application communicate using Bluetooth.''',
-        tech1: "Android",
-        tech2: "Tablet"),
+      projectTitle: "CM Appointments App",
+      projectContent:
+          "Efficient appointment app empowering the Assam Chief Minister to manage meeting requests seamlessly from his device.",
+      tech1: "Flutter",
+      tech2: "Android & IOS",
+      tech3: "API",
+    ),
+    WorkModel(
+      projectTitle: "Apna Team",
+      projectContent:
+          "Unleash your sports expertise with our fantasy app, where you draft, strategize, and compete for ultimate glory.",
+      tech1: "Flutter",
+      tech2: "Android",
+      tech3: "Fantasy Sport API",
+    ),
   ];
 
   factory AppClass() {
@@ -117,11 +122,9 @@ class AppClass {
 
   Future<bool> sendEmail(name, contact, msg) async {
     var url = Uri.https('hbk-portfolio-mailer.web.app', '/sendMail');
-    var response = await post(url, body: {
-      "name": name,
-      "contactInfo": contact,
-      "message": msg
-    }).timeout(Duration(seconds: 10));
+    var response = await post(url,
+            body: {"name": name, "contactInfo": contact, "message": msg})
+        .timeout(Duration(seconds: 10));
     print(response.body);
     return response.statusCode == 200;
   }

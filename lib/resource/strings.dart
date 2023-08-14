@@ -10,11 +10,11 @@ class Strings {
   static final orgLink = "https://tsinfosec.com/";
   /* About screen contents */
   static final aboutPara1 =
-      '''Hello! I am Debarshi and I am a passionate Mobile Application Developer proficient in Flutter and Native Android Development. And also proficient in Machine learning. My interest in mobile application development started back in 2019 when I decided to build an application for my project — turns my passion into profession.''';
+      '''Hello! I'm Debarshi, a passionate Mobile App Developer skilled in Flutter, Native Android, and machine learning. I began developing apps in 2019, turning my initial project into a career pursuit.''';
   static final aboutPara2 =
-      '''I’ve had the privilege of working for a few good organizations. My main focus these days is building quality Mobile Applications at Tech Savvy Software Security & Security Consultancy Pvt. Ltd. for a variety of clients.''';
+      '''I've been fortunate to work with great organizations. Currently, I'm dedicated to crafting top-notch Mobile Applications at Tech Savvy Software Security & Security Consultancy Pvt. Ltd. for diverse clients.''';
   static final aboutPara3 =
-      '''I am also passionate about research in Natural Language Processing Domain and published a paper in IEEE conference''';
+      '''I'm also into cool stuff like diving into Natural Language Processing research. Published a paper at an IEEE conference too!''';
 
   static final techIntro =
       '''Here are a few technologies I’ve been working with recently:''';
@@ -30,7 +30,7 @@ class Strings {
   static final expDesig1 = '''Software Developer''';
   static final expDur1 = '''Feb 2021 - Sep 2021''';
   static final expAbout1 =
-  '''To kick start my carrier in IT, joined as an Software Developer in this start-up to gain knowledge and experience in software industry, Mobile Application Development, Backend Development.''';
+  '''Starting my IT career as a Software Developer at this startup to gain experience in Mobile App and Backend Development.''';
   static final expAbout1_2 =
   '''Learned and explored native Android architecture models, network calls and core functionality.''';
   static final expAbout1_3 =
@@ -56,10 +56,29 @@ class Strings {
   static final expAbout3_3 =
   '''Interfacing with customers on a regular basis, delivering technology expertise.''';
 
+  static final expCompName0 = '''Freelancing''';
+  static final expDesig0 = '''Mobile Application Developer''';
+  static final expDur0 = '''March 2020 - Present''';
+  static final expAbout0 =
+  '''Provided services to multiple clients and for a variety of applications.''';
+  static final expAbout0_2 =
+  '''Developed an application with a custom typeface in the Assamese language, a word game, a calendar, and a note-taking application etc.''';
+  static final expAbout0_3 =
+  '''Worked closely with customers on a regular basis, delivering technology expertise.''';
+
+
   /* Contact screen content */
   static final endTxt =
-      '''Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!''';
+      '''While I'm not actively seeking new opportunities, I'm always available in my inbox. Feel free to reach out for questions or a friendly hello – I'll do my best to respond!''';
 
   static String prevOrg = "Web Arbiter";
+
+  static String github = "https://github.com/DebarshiSonowal";
+
+  static String insta = "https://www.instagram.com/debarshi_sonowal";
+
+  static String linkedIn = "https://www.linkedin.com/in/debarshisonowal";
+
+  static String facebook = "https://www.facebook.com/debarkhi.sonowal/";
 
 }
