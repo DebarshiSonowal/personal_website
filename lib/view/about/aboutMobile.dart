@@ -115,50 +115,61 @@ class _AboutMobileState extends State<AboutMobile> {
                           childAspectRatio: 10,
                           children: [
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Icon(Icons.arrow_right),
-                                Text(Strings.tech1,
-                                    style: GoogleFonts.robotoFlex(
-                                      color: AppColors().textLight,
-                                      letterSpacing: 1,
-                                      height: 1.5,
-                                      fontSize: 12,
-                                    )),
+                                Icon(
+                                  Icons.arrow_right,
+                                  size: 22,
+                                ),
+                                Text(
+                                  Strings.tech1,
+                                  style: GoogleFonts.robotoFlex(
+                                    color: AppColors().textLight,
+                                    letterSpacing: 1,
+                                    height: 1,
+                                    fontSize: 12,
+                                  ),
+                                ),
                               ],
                             ),
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Icon(Icons.arrow_right),
                                 Text(Strings.tech2,
                                     style: GoogleFonts.robotoFlex(
                                       color: AppColors().textLight,
                                       letterSpacing: 1,
-                                      height: 1.5,
-                                      fontSize: 12,
+                                      height: 1,
+                                      fontSize: 10,
                                     )),
                               ],
                             ),
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Icon(Icons.arrow_right),
-                                Text(Strings.tech3,
-                                    style: GoogleFonts.robotoFlex(
-                                      color: AppColors().textLight,
-                                      letterSpacing: 1,
-                                      height: 1.5,
-                                      fontSize: 12,
-                                    )),
+                                Text(
+                                  Strings.tech3,
+                                  style: GoogleFonts.robotoFlex(
+                                    color: AppColors().textLight,
+                                    letterSpacing: 1,
+                                    height: 1,
+                                    fontSize: 10,
+                                  ),
+                                ),
                               ],
                             ),
                             Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Icon(Icons.arrow_right),
                                 Text(Strings.tech4,
                                     style: GoogleFonts.robotoFlex(
                                       color: AppColors().textLight,
                                       letterSpacing: 1,
-                                      height: 1.5,
-                                      fontSize: 12,
+                                      height: 1,
+                                      fontSize: 10,
                                     )),
                               ],
                             ),

@@ -107,7 +107,7 @@ class _IntroMobileState extends State<IntroMobile> {
                       child: Text('Check Out My Work!',
                           style: TextStyle(
                               color: AppColors().neonColor,
-                              fontSize: 12,
+                              fontSize: 9,
                               letterSpacing: 1,
                               fontWeight: FontWeight.bold,
                               fontFamily: 'sfmono')),
