@@ -26,7 +26,10 @@ class _ExperienceMobState extends State<ExperienceMob> {
           points: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(right: 5.0, top: 10.0,),
+                padding: const EdgeInsets.only(
+                  right: 5.0,
+                  top: 10.0,
+                ),
                 child: Row(
                   children: [
                     Padding(
@@ -331,7 +334,6 @@ class _ExperienceMobState extends State<ExperienceMob> {
                   ],
                 ),
               ),
-
             ],
           )),
       ExperienceModel(
@@ -456,7 +458,6 @@ class _ExperienceMobState extends State<ExperienceMob> {
                   ],
                 ),
               ),
-
             ],
           )),
     ];
@@ -469,7 +470,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               RichText(
                 text: TextSpan(
@@ -482,10 +483,11 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       TextSpan(
                         text: ''' Where I've Worked''',
                         style: GoogleFonts.robotoSlab(
-                            color: Colors.white,
-                            letterSpacing: 1,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 25),
+                          color: Colors.white,
+                          letterSpacing: 1,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                        ),
                       )
                     ]),
               ),

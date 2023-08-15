@@ -88,7 +88,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
       onTap: () async {
         switch (index) {
           case 0:
-           // await launchUrl(Uri.parse(AppClass.gitSafeC19));
+            // await launchUrl(Uri.parse(AppClass.gitSafeC19));
             break;
 
           case 1:
@@ -96,11 +96,11 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
             break;
 
           case 2:
-           // await launchUrl(Uri.parse(AppClass.gitWtIot));
+            // await launchUrl(Uri.parse(AppClass.gitWtIot));
             break;
 
           case 3:
-           // await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
+            // await launchUrl(Uri.parse(AppClass.gitAutoStabilizer));
             break;
 
           case 4:
@@ -126,7 +126,9 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
         return Container(
           margin: EdgeInsets.all(isHovered ? 8.0 : 0.0),
           child: Tooltip(
-            message: AppClass().projectList[index].projectTitle.toString() + "\n\n" + AppClass().projectList[index].projectContent.toString(),
+            message: AppClass().projectList[index].projectTitle.toString() +
+                "\n\n" +
+                AppClass().projectList[index].projectContent.toString(),
             padding: EdgeInsets.all(20),
             margin: EdgeInsets.all(AppClass().getMqWidth(context) * 0.1),
             waitDuration: Duration(seconds: 3),
@@ -155,15 +157,17 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                           color: AppColors().neonColor,
                         ),
                         GestureDetector(
-                          onTap: () async{
-                            await launchUrl(
-                                Uri.parse(AppClass().projectList[index].link??""));
+                          onTap: () async {
+                            await launchUrl(Uri.parse(
+                                AppClass().projectList[index].link ?? ""));
                           },
                           child: SvgPicture.asset(
                             'assets/svg/externalLink.svg',
                             width: 20,
                             height: 20,
-                            color: isHovered ? AppColors().neonColor : Colors.white,
+                            color: isHovered
+                                ? AppColors().neonColor
+                                : Colors.white,
                           ),
                         ),
                       ],
@@ -173,15 +177,19 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                       child: Row(
                         children: [
                           Text(
-                            AppClass().projectList[index].projectTitle.toString(),
+                            AppClass()
+                                .projectList[index]
+                                .projectTitle
+                                .toString(),
                             textAlign: TextAlign.left,
                             style: GoogleFonts.robotoSlab(
-                                color: isHovered
-                                    ? AppColors().neonColor
-                                    : Colors.white,
-                                letterSpacing: 1,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18),
+                              color: isHovered
+                                  ? AppColors().neonColor
+                                  : Colors.white,
+                              letterSpacing: 1,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
                           ),
                         ],
                       ),
@@ -190,12 +198,17 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                         child: Text(
-                          AppClass().projectList[index].projectContent.toString(),
+                          AppClass()
+                              .projectList[index]
+                              .projectContent
+                              .toString(),
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 3,
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,
-                            height: 1.5,
-                            fontSize: 12,
+                            height: 1,
+                            fontSize: 10,
                           ),
                         ),
                       ),
@@ -208,7 +221,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,
-                            fontSize: 10,
+                            fontSize: 8,
                           ),
                         ),
                         Text(
@@ -216,7 +229,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,
-                            fontSize: 10,
+                            fontSize: 8,
                           ),
                         ),
                         Text(
@@ -225,7 +238,7 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                             color: AppColors().textLight,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 10,
+                            fontSize: 8,
                           ),
                         ),
                       ],

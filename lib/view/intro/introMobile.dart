@@ -44,7 +44,7 @@ class _IntroMobileState extends State<IntroMobile> {
                     color: AppColors().textColor,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 3,
-                    fontSize: 25,
+                    fontSize: 15,
                   ),
                 ),
               ),
@@ -57,7 +57,7 @@ class _IntroMobileState extends State<IntroMobile> {
                       color: AppColors().textLight,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 3,
-                      fontSize: 24,
+                      fontSize: 14,
                     ),
                   ),
                 ),
@@ -72,7 +72,7 @@ class _IntroMobileState extends State<IntroMobile> {
                             color: AppColors().textLight,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 17,
+                            fontSize: 15,
                           ),
                           children: <TextSpan>[
                         TextSpan(
@@ -81,7 +81,7 @@ class _IntroMobileState extends State<IntroMobile> {
                             color: AppColors().neonColor,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 17,
+                            fontSize: 15,
                           ),
                         )
                       ])),
@@ -107,7 +107,7 @@ class _IntroMobileState extends State<IntroMobile> {
                       child: Text('Check Out My Work!',
                           style: TextStyle(
                               color: AppColors().neonColor,
-                              fontSize: 13,
+                              fontSize: 12,
                               letterSpacing: 1,
                               fontWeight: FontWeight.bold,
                               fontFamily: 'sfmono')),
