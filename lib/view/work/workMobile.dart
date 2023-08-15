@@ -154,11 +154,17 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                           height: 35,
                           color: AppColors().neonColor,
                         ),
-                        SvgPicture.asset(
-                          'assets/svg/externalLink.svg',
-                          width: 20,
-                          height: 20,
-                          color: isHovered ? AppColors().neonColor : Colors.white,
+                        GestureDetector(
+                          onTap: () async{
+                            await launchUrl(
+                                Uri.parse(AppClass().projectList[index].link??""));
+                          },
+                          child: SvgPicture.asset(
+                            'assets/svg/externalLink.svg',
+                            width: 20,
+                            height: 20,
+                            color: isHovered ? AppColors().neonColor : Colors.white,
+                          ),
                         ),
                       ],
                     ),

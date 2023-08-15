@@ -5,6 +5,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/controller/generalController.dart';
 import 'package:portfolio/resource/appClass.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../resource/colors.dart';
 
@@ -164,12 +165,18 @@ class _WorkWebState extends ConsumerState<WorkWeb> {
                           height: 45,
                           color: AppColors().neonColor,
                         ),
-                        SvgPicture.asset(
-                          'assets/svg/externalLink.svg',
-                          width: 22,
-                          height: 22,
-                          color:
-                              isHovered ? AppColors().neonColor : Colors.white,
+                        GestureDetector(
+                          onTap: () async{
+                            await launchUrl(
+                                Uri.parse(AppClass().projectList[index].link??""));
+                          },
+                          child: SvgPicture.asset(
+                            'assets/svg/externalLink.svg',
+                            width: 22,
+                            height: 22,
+                            color:
+                                isHovered ? AppColors().neonColor : Colors.white,
+                          ),
                         ),
                       ],
                     ),

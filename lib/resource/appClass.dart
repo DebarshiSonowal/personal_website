@@ -27,34 +27,40 @@ class AppClass {
 
   List<WorkModel> projectList = [
     WorkModel(
-        projectTitle: "Guwahati Plus",
-        projectContent:
-            "The G Plus app provides a comprehensive platform for Latest News, Videos, and Special Features focused on Guwahati, including exclusive content and community engagement.",
-        tech1: "Flutter",
-        tech2: "Firebase",
-        tech3: "Eazebuzz"),
-    WorkModel(
-      projectTitle: "Tratri",
+      projectTitle: "Guwahati Plus",
       projectContent:
-          "Tratri celebrates everyday heroes and diverse histories, offering a comfortable reading experience through the Tratri App.",
+          "The G Plus app provides a comprehensive platform for Latest News, Videos, and Special Features focused on Guwahati, including exclusive content and community engagement.",
       tech1: "Flutter",
-      tech2: "RazorPay",
-      tech3: "Firebase",
+      tech2: "Firebase",
+      tech3: "Eazebuzz",
+      link: "https://onelink.to/czed32",
     ),
     WorkModel(
-        projectTitle: "NIRI9",
+        projectTitle: "Tratri",
         projectContent:
-            "Your ultimate app for regional language movies, web series, and short films, bridging the gap between creators and Indian audiences.",
+            "Tratri celebrates everyday heroes and diverse histories, offering a comfortable reading experience through the Tratri App.",
         tech1: "Flutter",
-        tech2: "Android & IOS",
-        tech3: "API"),
+        tech2: "RazorPay",
+        tech3: "Firebase",
+        link: "https://onelink.to/s4akes"),
     WorkModel(
-        projectTitle: "POS",
-        projectContent:
-            '''An affordable, all-in-one POS solution catering to the needs of small restaurants. Through this application, we can run analytics and provide the data''',
-        tech1: "Flutter",
-        tech2: "Android",
-        tech3: "Java"),
+      projectTitle: "NIRI9",
+      projectContent:
+          "Your ultimate app for regional language movies, web series, and short films, bridging the gap between creators and Indian audiences.",
+      tech1: "Flutter",
+      tech2: "Android & IOS",
+      tech3: "API",
+      link: "https://niri9.com/",
+    ),
+    WorkModel(
+      projectTitle: "POS",
+      projectContent:
+          '''An affordable, all-in-one POS solution catering to the needs of small restaurants. Through this application, we can run analytics and provide the data''',
+      tech1: "Flutter",
+      tech2: "Android",
+      tech3: "Java",
+      link: "https://tsinfosec.com/"
+    ),
     WorkModel(
       projectTitle: "CM Appointments App",
       projectContent:
@@ -62,6 +68,7 @@ class AppClass {
       tech1: "Flutter",
       tech2: "Android & IOS",
       tech3: "API",
+      link: "https://cmapp.cognitechindia.in/"
     ),
     WorkModel(
       projectTitle: "Transformer-Based Hate Speech Detection in Assamese",
@@ -70,6 +77,7 @@ class AppClass {
       tech1: "NLP",
       tech2: "Machine Learning",
       tech3: "Flutter",
+      link: "https://ieeexplore.ieee.org/document/10183497",
     ),
   ];
 
