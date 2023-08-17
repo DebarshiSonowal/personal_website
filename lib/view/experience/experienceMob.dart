@@ -44,7 +44,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout1,
+                          Strings.expAbout3,
                           style: TextStyle(
                               color: AppColors().textLight,
                               letterSpacing: 1,
@@ -73,7 +73,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout1_2,
+                          Strings.expAbout3_2,
                           style: TextStyle(
                               color: AppColors().textLight,
                               letterSpacing: 1,
@@ -102,7 +102,7 @@ class _ExperienceMobState extends State<ExperienceMob> {
                       child: Padding(
                         padding: const EdgeInsets.only(right: 15.0),
                         child: Text(
-                          Strings.expAbout1_3,
+                          Strings.expAbout3_3,
                           style: TextStyle(
                               color: AppColors().textLight,
                               letterSpacing: 1,
@@ -218,35 +218,6 @@ class _ExperienceMobState extends State<ExperienceMob> {
           duration: Strings.expDur1,
           points: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 5.0, top: 10.0),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 5.0),
-                      child: Icon(
-                        Icons.arrow_right,
-                        color: AppColors().neonColor,
-                        size: 20,
-                      ),
-                    ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(right: 15.0),
-                        child: Text(
-                          Strings.expAbout1,
-                          style: TextStyle(
-                              color: AppColors().textLight,
-                              letterSpacing: 1,
-                              height: 1.5,
-                              fontSize: 11,
-                              fontFamily: 'sfmono'),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
               Padding(
                 padding: const EdgeInsets.only(right: 5.0, top: 10.0),
                 child: Row(

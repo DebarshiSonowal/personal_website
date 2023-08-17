@@ -164,13 +164,15 @@ class _AboutMobileState extends State<AboutMobile> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Icon(Icons.arrow_right),
-                                Text(Strings.tech4,
-                                    style: GoogleFonts.robotoFlex(
-                                      color: AppColors().textLight,
-                                      letterSpacing: 1,
-                                      height: 1,
-                                      fontSize: 10,
-                                    )),
+                                Text(
+                                  Strings.tech4,
+                                  style: GoogleFonts.robotoFlex(
+                                    color: AppColors().textLight,
+                                    letterSpacing: 1,
+                                    height: 1,
+                                    fontSize: 10,
+                                  ),
+                                ),
                               ],
                             ),
                           ]),
