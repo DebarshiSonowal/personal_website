@@ -203,12 +203,12 @@ class _WorkWebState extends ConsumerState<WorkMobile> {
                               .projectContent
                               .toString(),
                           overflow: TextOverflow.ellipsis,
-                          maxLines: 3,
+                          maxLines: 2,
                           style: GoogleFonts.roboto(
                             color: AppColors().textLight,
                             letterSpacing: 1,
                             height: 1,
-                            fontSize: 10,
+                            fontSize: 9,
                           ),
                         ),
                       ),

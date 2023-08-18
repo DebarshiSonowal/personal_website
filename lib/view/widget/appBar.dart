@@ -33,7 +33,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
                     child: Padding(
                   padding: const EdgeInsets.only(left: 20.0),
                   child: Image.asset(
-                    'assets/svg/appLogo.png',
+                    'assets/svg/favicon.png',
                     width: AppClass().getMqWidth(context) * 0.5,
                     height: AppClass().getMqHeight(context) * 0.5,
                   ),
@@ -137,7 +137,7 @@ class _ActionBarState extends ConsumerState<ActionBar> {
               Expanded(child: Container(
                   width: AppClass().getMqWidth(context) * 0.07,
                   height: AppClass().getMqHeight(context) * 0.07,
-                  child: Image.asset('assets/svg/appLogo.png',))),
+                  child: Image.asset('assets/svg/favicon.png',))),
               Expanded(
                 flex: 9,
                 child: Row(

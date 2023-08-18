@@ -110,6 +110,7 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
             ),
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 '''Built & Developed by Debarshi Sonowal''',
