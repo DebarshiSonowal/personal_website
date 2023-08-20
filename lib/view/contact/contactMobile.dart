@@ -116,7 +116,7 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                 '''Built & Developed by Debarshi Sonowal''',
                 style: TextStyle(
                     color: AppColors().textColor,
-                    fontSize: 12,
+                    fontSize: 9,
                     fontFamily: 'sfmono'),
               ),
               Padding(
@@ -125,7 +125,7 @@ class _ContactMobileState extends ConsumerState<ContactMobile> {
                   '''ref - Jeevanandham''',
                   style: TextStyle(
                       color: AppColors().neonColor,
-                      fontSize: 12,
+                      fontSize: 9,
                       fontFamily: 'sfmono'),
                 ),
               ),
